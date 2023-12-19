@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{796AA941-A0CF-43CA-8ABA-D496A605E505}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>dangnhapjed</RootNamespace>
+    <AssemblyName>dangnhapjed</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dangky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangky.Designer.cs">
+      <DependentUpon>Dangky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="datban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="datban.Designer.cs">
+      <DependentUpon>datban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\AcountA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\AcountA.Designer.cs">
+      <DependentUpon>AcountA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\DatbanonlineA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\DatbanonlineA.Designer.cs">
+      <DependentUpon>DatbanonlineA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Homea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\Homea.Designer.cs">
+      <DependentUpon>Homea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\NhanvienA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\NhanvienA.Designer.cs">
+      <DependentUpon>NhanvienA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\ThucDona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\ThucDona.Designer.cs">
+      <DependentUpon>ThucDona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\tintucA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\tintucA.Designer.cs">
+      <DependentUpon>tintucA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nguoi Dung.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quenmatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quenmatkhau.Designer.cs">
+      <DependentUpon>Quenmatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themecolor.cs" />
+    <EmbeddedResource Include="Dangky.resx">
+      <DependentUpon>Dangky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="datban.resx">
+      <DependentUpon>datban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\AcountA.resx">
+      <DependentUpon>AcountA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\DatbanonlineA.resx">
+      <DependentUpon>DatbanonlineA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Homea.resx">
+      <DependentUpon>Homea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\NhanvienA.resx">
+      <DependentUpon>NhanvienA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\ThucDona.resx">
+      <DependentUpon>ThucDona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\tintucA.resx">
+      <DependentUpon>tintucA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Quenmatkhau.resx">
+      <DependentUpon>Quenmatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gifDangnhap.gif" />
+    <None Include="Resources\gif Jolibee.gif" />
+    <None Include="Resources\ổ khóa.jpg" />
+    <None Include="Resources\ảnh tK.png" />
+    <None Include="Resources\hình ảnh 3.jpg" />
+    <None Include="Resources\hình ảnh 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gmail a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2023-12-11 223329.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hình ảnh 21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hình ảnh 22.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
